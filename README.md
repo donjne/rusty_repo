@@ -30,7 +30,7 @@ This challenge merges two educational paths:
 
 ## Daily Breakdown
 
-**Day 1 to Day 30**: Each day's tasks are listed in a dedicated file, `DAY_X.md`, where X represents the day number. These files detail:
+**Day 1 to Day 30**: Each day's tasks are listed in a dedicated file, `DAY_X/README.md`, where X represents the day number. These files detail:
 
 - **Basic Data Structures**
 - **Advanced Data Structures**
