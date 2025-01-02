@@ -1,0 +1,28 @@
+# Ignore Cargo's generated files
+/target/
+/Cargo.lock
+
+# Ignore Rust's build artifacts
+*.d
+
+# Ignore Rust's intermediate compilation files
+*.o
+*.so
+*.dylib
+*.rlib
+*.a
+
+# Ignore the editor's temporary files
+.idea/
+/.vscode/
+/*.swp
+
+# Ignore system files (macOS, Linux, etc.)
+.DS_Store
+Thumbs.db
+
+# Ignore Rust documentation files
+/target/doc/
+
+# Ignore Rust test output
+/target/test-*
