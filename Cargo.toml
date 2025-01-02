@@ -1,5 +1,5 @@
 [workspace]
 members = [
-    "day_one/task_01_stack",
+    "day_one/task_01_stack", "day_one/task_02_queue",
     # Add more tasks as you create them (e.g., task_02_queue, task_03_reverse)
 ]
