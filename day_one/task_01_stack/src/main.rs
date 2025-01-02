@@ -29,6 +29,7 @@ impl<T> Stack<T> {
     pub fn size(&self) -> usize {
         self.items.len()
     }
+    
 }
 
 // Step 3: Main function for demonstration
