@@ -1,0 +1,6 @@
+[package]
+name = "task_05_ring_buffer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
