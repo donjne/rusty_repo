@@ -168,4 +168,4 @@ Improving error handling or providing better feedback on buffer operations.
 
 Implementing a circular buffer in Rust teaches concepts like memory management, index manipulation, and how to handle data in a cyclic manner without requiring dynamic memory allocation for growth. This structure is useful in scenarios like logging, real-time data processing, or any situation where you need a fixed-size queue with FIFO behavior.
 
-This README provides a comprehensive guide on what the circular buffer implementation entails, how to handle its unique challenges, and how to test it thoroughly. Remember, the actual code for implementation and tests would be in separate Rust files within your project.
+This README provides a comprehensive guide on what the circular buffer implementation entails, how to handle its unique challenges, and how to test it thoroughly.
