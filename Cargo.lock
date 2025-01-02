@@ -9,3 +9,7 @@ version = "0.1.0"
 [[package]]
 name = "task_02_queue"
 version = "0.1.0"
+
+[[package]]
+name = "task_03_vector"
+version = "0.1.0"
