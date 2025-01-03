@@ -91,12 +91,13 @@ A memory pool is a custom allocator that pre-allocates memory to avoid frequent 
 
 ### 8. Implement Custom Smart Pointer with Interior Mutability
 
-A smart pointer manages memory automatically. Implement a smart pointer that uses interior mutability to allow mutable access even when the pointer itself is immutable.
+A smart pointer manages memory automatically. Implement a smart pointer that uses interior mutability to allow mutable access, adhering to Rust's borrowing rules, and ensuring safe usage.
 
-- **Objective**: Create a smart pointer that allows mutation through an immutable reference by using `RefCell`.
+- **Objective**: Create a smart pointer that uses RefCell for interior mutability, enabling mutable access even through an immutable reference.
 - **Implementation**:
-  - Use `RefCell` for interior mutability.
-  - Implement `Deref` and `DerefMut` traits to allow smart pointer usage like a normal reference.
+  - Use `RefCell` to manage the inner value and enforce borrowing rules at runtime.
+  - Provide methods for immutable and mutable access (`borrow` and `borrow_mut`) that showcase safe usage
+  - Demonstrate the smart pointer's functionality with examples in the main function, ensuring no runtime borrow violations occur.
 
 ### 9. Create Lock-free Data Structure using Atomic Operations
 

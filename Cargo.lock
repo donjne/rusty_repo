@@ -29,3 +29,7 @@ version = "0.1.0"
 [[package]]
 name = "task_07_mempool"
 version = "0.1.0"
+
+[[package]]
+name = "task_08_smart_ptr"
+version = "0.1.0"
