@@ -25,3 +25,7 @@ version = "0.1.0"
 [[package]]
 name = "task_06_alloc"
 version = "0.1.0"
+
+[[package]]
+name = "task_07_mempool"
+version = "0.1.0"
