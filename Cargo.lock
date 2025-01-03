@@ -57,3 +57,7 @@ version = "0.1.0"
 [[package]]
 name = "task_14_cow"
 version = "0.1.0"
+
+[[package]]
+name = "task_15_raii_wrapper"
+version = "0.1.0"
