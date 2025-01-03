@@ -1,5 +1,5 @@
 [workspace]
 members = [
-    "day_one/task_01_stack", "day_one/task_02_queue", "day_one/task_03_vector", "day_one/task_04_circular_buffer", "day_one/task_05_ring_buffer", "day_one/task_06_alloc", "day_one/task_07_mempool", "day_one/task_08_smart_ptr", "day_one/task_09_lock_free", "day_one/task_10_arena_alloc", "day_one/task_11_ref_gc", "day_one/task_12_alloc_mempool",
+    "day_one/task_01_stack", "day_one/task_02_queue", "day_one/task_03_vector", "day_one/task_04_circular_buffer", "day_one/task_05_ring_buffer", "day_one/task_06_alloc", "day_one/task_07_mempool", "day_one/task_08_smart_ptr", "day_one/task_09_lock_free", "day_one/task_10_arena_alloc", "day_one/task_11_ref_gc", "day_one/task_12_alloc_mempool", "day_one/task_13_buffer",
     # Add more tasks as you create them (e.g., task_02_queue, task_03_reverse)
 ]
