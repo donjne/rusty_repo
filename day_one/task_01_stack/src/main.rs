@@ -1,9 +1,9 @@
-// Step 1: Define the Stack struct
+// ------Stack struct
 pub struct Stack<T> {
     items: Vec<T>,
 }
 
-// Step 2: Implement basic operations
+// ------Basic operations
 impl<T> Stack<T> {
     // Push operation
     pub fn push(&mut self, item: T) {
@@ -32,7 +32,7 @@ impl<T> Stack<T> {
     
 }
 
-// Step 3: Main function for demonstration
+// --------Main function
 fn main() {
     let mut stack = Stack { items: Vec::new() };
 
@@ -62,7 +62,7 @@ fn main() {
     }
 }
 
-// Step 4: Testing the Stack (This part stays the same)
+// --------Testing the Stack
 #[cfg(test)]
 mod tests {
     use super::*;
