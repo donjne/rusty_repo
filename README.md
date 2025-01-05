@@ -42,7 +42,7 @@ This challenge merges two educational paths:
 - **Concurrency and Parallelism**
 - **Security and Performance Optimization**
 
-## Rust Challenge Difficulty Levels**  
+## Rust Challenge Difficulty Levels
 
 To help participants gauge their progress and set achievable goals during the 30-day Rust challenge, we’ve categorized the challenge into four difficulty levels. Each level corresponds to a specific number of tasks to complete within the challenge duration:  
 
