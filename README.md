@@ -42,13 +42,13 @@ This challenge merges two educational paths:
 - **Concurrency and Parallelism**
 - **Security and Performance Optimization**
 
-**Rust Challenge Difficulty Levels**  
+## Rust Challenge Difficulty Levels**  
 
 To help participants gauge their progress and set achievable goals during the 30-day Rust challenge, we’ve categorized the challenge into four difficulty levels. Each level corresponds to a specific number of tasks to complete within the challenge duration:  
 
 1. **Easy**  
    - **Goal**: Complete 3 tasks.  
-   - **Description**: Perfect for beginners or those with limited time. Focus on foundational concepts, such as setting up your Rust environment, understanding basic syntax, or creating a simple CLI tool.  
+   - **Description**: Perfect for beginners or those with limited time.
 
 2. **Intermediate**  
    - **Goal**: Complete 6 tasks.  
