@@ -3,6 +3,10 @@
 version = 3
 
 [[package]]
+name = "task_01_singly_linked_list"
+version = "0.1.0"
+
+[[package]]
 name = "task_01_stack"
 version = "0.1.0"
 
