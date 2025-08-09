@@ -66,6 +66,20 @@ impl<T> LinkedList<T> {
         }
         current.as_ref().map(|node| &node.value)  // Return reference to value
     }
+
+    fn reverse(&mut self) {
+        let mut prev = None;                    // Previous node (starts as None)
+        let mut current = self.head.take();     // Current node (starts as head)
+        
+        while let Some(mut node) = current {
+            let next = node.next.take();        // Save the next node
+            node.next = prev;                   // Reverse the pointer
+            prev = Some(node);                  // Move prev forward
+            current = next;                     // Move current forward
+        }
+        
+        self.head = prev;                       // The last node becomes new head
+    }
 }
 
 // Display trait: Makes our list printable (TRAVERSAL for printing)
@@ -147,5 +161,56 @@ mod tests {
         assert_eq!(list.get(1), Some(&2));
         assert_eq!(list.get(2), Some(&1));
         assert_eq!(list.get(3), None);
+    }
+
+    #[test]
+    fn test_reverse_empty_list() {
+        let mut list: LinkedList<i32> = LinkedList::new();
+        list.reverse();
+        assert!(list.is_empty());
+    }
+
+    #[test]
+    fn test_reverse_single_element() {
+        let mut list = LinkedList::new();
+        list.push(42);
+        list.reverse();
+        assert_eq!(format!("{}", list), "[42]");
+        assert_eq!(list.get(0), Some(&42));
+    }
+
+    #[test]
+    fn test_reverse_multiple_elements() {
+        let mut list = LinkedList::new();
+        list.push(1);
+        list.push(2);
+        list.push(3);
+        
+        // Before: [3 -> 2 -> 1]
+        assert_eq!(format!("{}", list), "[3 -> 2 -> 1]");
+        
+        list.reverse();
+        
+        // After: [1 -> 2 -> 3]
+        assert_eq!(format!("{}", list), "[1 -> 2 -> 3]");
+        assert_eq!(list.get(0), Some(&1));
+        assert_eq!(list.get(1), Some(&2));
+        assert_eq!(list.get(2), Some(&3));
+        assert_eq!(list.len(), 3);
+    }
+
+    #[test]
+    fn test_reverse_twice() {
+        let mut list = LinkedList::new();
+        list.push(1);
+        list.push(2);
+        list.push(3);
+        
+        let original = format!("{}", list);
+        list.reverse();
+        list.reverse();
+        
+        // Double reverse should restore original
+        assert_eq!(format!("{}", list), original);
     }
 }
