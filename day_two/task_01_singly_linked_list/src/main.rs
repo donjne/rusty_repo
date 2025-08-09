@@ -66,7 +66,8 @@ impl<T> LinkedList<T> {
         }
         current.as_ref().map(|node| &node.value)  // Return reference to value
     }
-
+    
+    // Reverse the linked list in-place
     fn reverse(&mut self) {
         let mut prev = None;                    // Previous node (starts as None)
         let mut current = self.head.take();     // Current node (starts as head)
@@ -118,6 +119,15 @@ fn main() {
     if let Some(value) = list.get(1) {
         println!("Index 1: {}", value); // Prints: Index 1: 1
     }
+
+    list.reverse();
+    
+    println!("Reversed list: {}", list);
+    
+    // Reverse again to show it works both ways
+    list.reverse();
+    
+    println!("Reversed again: {}", list);
 }
 
 
